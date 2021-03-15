@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI1Activity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <cat.meaw.meow.mycustomsviewex1.components.layout.CustomEditTextVIew
+            android:id="@+id/editView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:hint="Custom.." />
+        <HorizontalScrollView
+            android:layout_marginTop="10dp"
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_view">
+
+            <cat.meaw.meow.mycustomsviewex1.components.layout.RatingView
+                android:id="@+id/ratingBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                app:numStars="5"
+                app:rating="1" />
+        </HorizontalScrollView>
+        <cat.meaw.meow.mycustomsviewex1.components.layout.CustomButtomView
+            android:id="@+id/btn_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:buttomIcon="@drawable/cortana_icon"
+            app:buttonBg="@drawable/button_bg"
+            app:buttonTitle="Buttom view1" />
+    </LinearLayout>
+
+</RelativeLayout>

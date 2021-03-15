@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape
+            android:shape="ring"
+            android:thicknessRatio="10"
+            android:useLevel="false">
+            <solid android:color="#DDD" />
+        </shape>
+    </item>
+    <item>
+        <rotate
+            android:fromDegrees="270"
+            android:toDegrees="270">
+            <shape
+                android:shape="ring"
+                android:thicknessRatio="10"
+                android:useLevel="true">
+                <gradient
+                    android:endColor="@color/end_circle"
+                    android:startColor="@color/start_circle"
+                    android:type="sweep"/>
+
+            </shape>
+        </rotate>
+    </item>
+
+<!--    <item>-->
+<!--        <rotate android:fromDegrees="270" android:toDegrees="270">-->
+<!--            <shape-->
+<!--                android:innerRadiusRatio="2.55"-->
+<!--                android:shape="ring"-->
+<!--                android:thickness="15dp"-->
+<!--                android:useLevel="true">-->
+<!--                <solid android:color="@color/end_circle" />-->
+<!--            </shape>-->
+<!--        </rotate>-->
+<!--    </item>-->
+<!--    <item android:bottom="211dp">-->
+<!--        <shape-->
+<!--            android:innerRadiusRatio="1000"-->
+<!--            android:shape="ring"-->
+<!--            android:thickness="7dp"-->
+<!--            android:useLevel="false">-->
+<!--            <solid android:color="@color/end_circle" />-->
+<!--        </shape>-->
+<!--    </item>-->
+<!--    <item>-->
+<!--        <rotate>-->
+<!--            <inset android:insetBottom="211dp">-->
+<!--                <shape-->
+<!--                    android:innerRadiusRatio="1000"-->
+<!--                    android:shape="ring"-->
+<!--                    android:thickness="7dp"-->
+<!--                    android:useLevel="false">-->
+<!--                    <solid android:color="@color/end_circle" />-->
+<!--                </shape>-->
+<!--            </inset>-->
+<!--        </rotate>-->
+<!--    </item>-->
+
+</layer-list>

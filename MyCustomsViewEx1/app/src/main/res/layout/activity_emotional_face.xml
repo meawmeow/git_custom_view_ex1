@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmotionalFaceActivity">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <cat.meaw.meow.mycustomsviewex1.components.canvas.EmotionalFaceView
+            android:id="@+id/happyButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:borderColor="@color/white"
+            app:eyesColor="@color/white"
+            app:faceColor="@color/red"
+            app:mouthColor="@color/white"
+            app:state="happy"
+            />
+        <cat.meaw.meow.mycustomsviewex1.components.canvas.EmotionalFaceView
+            android:id="@+id/sadButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:borderColor="@color/black"
+            app:eyesColor="@color/black"
+            app:faceColor="@color/light_grey"
+            app:mouthColor="@color/black"
+            app:state="sad"
+            />
+    </LinearLayout>
+    <cat.meaw.meow.mycustomsviewex1.components.canvas.EmotionalFaceView
+        android:id="@+id/emotionalFaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
